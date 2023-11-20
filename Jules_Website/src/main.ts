@@ -1,6 +1,6 @@
 import './style.css'
-import { questions } from './question.ts'
-import { answers } from './answers.ts'
+import { quiz } from './quiz.ts'
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="container">
@@ -11,8 +11,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
       <div class="answers">
       </div>
+      <div class="score-container">
+        <p>Final Score: <span id="final-score">0</span></p>
+      </div>
     </div>
   </div>
 `
-questions(document.querySelector(".question") as HTMLElement)
-answers(document.querySelector(".answers") as HTMLElement)
+quiz(document.querySelector(".question") as HTMLElement, document.querySelector(".answers") as HTMLElement)
