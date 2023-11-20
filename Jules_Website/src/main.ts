@@ -11,9 +11,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </div>
       <div class="answers">
       </div>
-      <div class="score-container">
-        <p>Final Score: <span id="final-score">0</span></p>
-      </div>
     </div>
   </div>
 `

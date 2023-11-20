@@ -16,6 +16,14 @@ export function quiz(questionDiv: HTMLElement, answersDiv: HTMLElement) {
                 { text: "4", value: -69 },
                 { text: "26264", value: 30 },
             ]},
+            {question: "Who is the coolest guy", 
+            answers: [
+                { text: "Mark", value: 100 },
+                { text: "Max", value: 20 },
+                { text: "Rigatoni", value: 50 },
+                { text: "Luke", value: -100 },
+                { text: "Jules", value: 30 },
+            ]},
             //Add more
         ];
     
@@ -57,6 +65,8 @@ export function quiz(questionDiv: HTMLElement, answersDiv: HTMLElement) {
             } else {
                 console.log("Total Score:", totalScore);
                 totalScore = 0;
+                currentQuestionIndex = 0;
+                displayQuestionAndAnswers();
             }
         }
     });
