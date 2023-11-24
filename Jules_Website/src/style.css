@@ -14,7 +14,7 @@ body, html {
   flex-direction: column;
 }
 
-.placeholder {
+.image {
   flex: 2;
   background-color: #f0f0f0;
 }
